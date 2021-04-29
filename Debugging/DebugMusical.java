@@ -1,16 +1,16 @@
-public class DebugMusical extends DebugPlay
+public class FixDebugMusical extends FixDebugPlay
 {
    protected String composer;
-   
-   DebugMusical(String title, String author, String comp)
+
+   FixDebugMusical(String title, String author, String comp)
    {
-      super(title);
-      composer = composer;
+      super(title, author);
+      composer = comp;
    }
+   @Override
    public void display()
    {
-      System.out.println("The performance is  + title +
-        " by " + author + "\nThe music for " + title 
-        " is by " + composer);
+      super.display();
+      System.out.println("The music for " + title + " is by " + composer);
    }
 }

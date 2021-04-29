@@ -1,12 +1,12 @@
-public class DebugBook
+public class FixDebugBook
 {
    protected int pages;
-   public void DebugBook(int pgs)
+   public FixDebugBook(int pgs)
    {
       pages = pgs;
    }
    public int getPages()
    {
-      return pgs;
+      return pages;
    }
 }

@@ -1,16 +1,16 @@
-public class DebugPlay
+public class FixDebugPlay
 {
-   private String title;
+   protected String title;
    protected String author;
 
-   public FixDebugPlay(String title, String author)
+   public FixDebugPlay(String thetitle, String theauthor)
    {
-      title = title;
-      author = author;
+      title = thetitle;
+      author = theauthor;
    }
    public void display()
    {
-      System.out.println("The performance is " + title +
-        " by " + author);
+      System.out.println("The performance is " + title + " by " + author);
    }
+   // System.out.println("The performance is " + title + " by " + author + "\nThe music for " + title + " is by " + composer);
 }
